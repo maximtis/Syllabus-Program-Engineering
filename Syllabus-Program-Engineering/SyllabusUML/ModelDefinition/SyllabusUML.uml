@@ -1,0 +1,811 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel"
+  dslVersion="1.0.0.0"
+  Id="9694e8e9-e837-42ea-88bc-458de8c5eb19"
+  name="SyllabusUML" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="c7c1bb5f-6b26-4776-9072-443e20f38c39">
+      <body>1.Назва
+2.Обсяг у годинах
+3.Викладачі</body>
+      <annotatedElements>
+        <useCaseMoniker
+          Id="4bc94286-ea33-4423-91db-8c7ce1228f3b"
+          LastKnownName="Ввести дані предмету "
+          LastKnownLocation="SyllabusUML.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="486d73be-2142-43ca-8705-753ee4910bbc">
+      <body>1.ПІБ
+2.Предмети</body>
+      <annotatedElements>
+        <useCaseMoniker
+          Id="d5c857b2-a5da-4459-a2f5-e315771a423a"
+          LastKnownName="Ввести дані викладача"
+          LastKnownLocation="SyllabusUML.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="fc38eb84-6eee-496f-899c-0e274192934a">
+      <body>1.Номер
+2.Тип</body>
+      <annotatedElements>
+        <useCaseMoniker
+          Id="f64e7a1f-a46f-4f72-a500-bbfa03b19eb4"
+          LastKnownName="Ввести дані аудиторії"
+          LastKnownLocation="SyllabusUML.uml" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <actor
+        Id="2b347892-f1d4-432e-b711-f40cd31512dd"
+        name="Користувач"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="c724e614-13da-4449-954a-7b666b74a23b"
+            isDerived="false"
+            sourceEndRoleName="Пользователь"
+            targetEndRoleName="Составить план"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="d9279891-7792-4559-a39b-ece85f3a8fed"
+              LastKnownName="Скласти розклад"
+              LastKnownLocation="SyllabusUML.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4330da81-2736-4a04-9cd4-72fcd44c46ae"
+                  name="Пользователь"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="384ea329-a2ed-4d94-a021-e0d42a7fbc74"
+                  name="Составить план"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="fa941346-a21e-4d26-a079-32765bc68732"
+            isDerived="false"
+            sourceEndRoleName="Пользователь"
+            targetEndRoleName="Экспортировать"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="b2e3daa8-7eac-48d2-bd3c-02fb422d2ee6"
+              LastKnownName="Експортувати"
+              LastKnownLocation="SyllabusUML.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1bbbeefa-35a4-4ac2-9899-c137b917bdb8"
+                  name="Пользователь"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="11fe0b43-beb6-4041-9d06-8144d0aec477"
+                  name="Экспортировать"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="6ce584ae-b9a2-4bb9-a962-77b35932a494"
+            isDerived="false"
+            sourceEndRoleName="Пользователь"
+            targetEndRoleName="Cохранить"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="2a68b208-97e2-463e-88ba-082bfa125d35"
+              LastKnownName="Зберегти"
+              LastKnownLocation="SyllabusUML.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4dfeeda0-f55e-4041-81e1-d2a4238f69ca"
+                  name="Пользователь"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d3d30218-a501-4ac8-a7e1-c3d03343a2e1"
+                  name="Cохранить"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="f22fd116-e46b-446f-9125-798f3da0ecce"
+            isDerived="false"
+            sourceEndRoleName="Пользователь"
+            targetEndRoleName="Ввести данные"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="e3cf047d-1ff1-4006-8908-b74f5dfce1ce"
+              LastKnownName="Ввести дані"
+              LastKnownLocation="SyllabusUML.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b312d30a-4adb-404f-b649-00459b0cf32d"
+                  name="Пользователь"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0f66f21b-a1b0-4c56-bec3-eed2c4597e31"
+                  name="Ввести данные"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="c44d77f2-9c20-4f19-b429-bed3c9278aaf"
+            isDerived="false"
+            sourceEndRoleName="Користувач"
+            targetEndRoleName="Обрати структуру розкладу"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="779f4ac0-b6b5-467b-8255-0fddf3210354"
+              LastKnownName="Обрати структуру розкладу"
+              LastKnownLocation="SyllabusUML.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c91c90c8-65b5-40cf-bf15-8d6f4ba94d81"
+                  name="Користувач"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="351594f0-7764-452b-83e2-5ad287a4afa4"
+                  name="Обрати структуру розкладу"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="e3cf047d-1ff1-4006-8908-b74f5dfce1ce"
+        name="Ввести дані"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="b3c66972-9ccd-4f57-8504-3cc42e99749d"
+            isDerived="false"
+            sourceEndRoleName="Ввести дані"
+            targetEndRoleName="Ввести дані аудиторії"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="f64e7a1f-a46f-4f72-a500-bbfa03b19eb4"
+              LastKnownName="Ввести дані аудиторії"
+              LastKnownLocation="SyllabusUML.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a1fe0eb0-0ad0-4fac-ba33-6d01b0661f73"
+                  name="Ввести дані"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f5d6776c-4389-4294-8077-36b8d429f5b2"
+                  name="Ввести дані аудиторії"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="3ac47af2-6981-4fcf-9c7f-4b6ebd2cfcf8"
+            isDerived="false"
+            sourceEndRoleName="Ввести дані"
+            targetEndRoleName="Ввести дані викладача"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="d5c857b2-a5da-4459-a2f5-e315771a423a"
+              LastKnownName="Ввести дані викладача"
+              LastKnownLocation="SyllabusUML.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="cd534342-80d8-4ac9-87dd-f8d99c6cb4e7"
+                  name="Ввести дані"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0311efa3-ba0f-4c47-ab42-5ca6f4078f89"
+                  name="Ввести дані викладача"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="565177fc-ad5c-4025-a9c2-4cb126a5f9d9"
+            isDerived="false"
+            sourceEndRoleName="Ввести дані"
+            targetEndRoleName="Ввести дані предмету "
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="4bc94286-ea33-4423-91db-8c7ce1228f3b"
+              LastKnownName="Ввести дані предмету "
+              LastKnownLocation="SyllabusUML.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="40187c23-f58e-4e47-a525-43a0832d47b4"
+                  name="Ввести дані"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b7fee843-3a7e-4a68-9e80-8785f765adbf"
+                  name="Ввести дані предмету "
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="d9279891-7792-4559-a39b-ece85f3a8fed"
+        name="Скласти розклад"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <artifact
+        Id="5afacb33-e3c2-4a57-a68e-25772b2c5071"
+        name="Artifact1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="b2e3daa8-7eac-48d2-bd3c-02fb422d2ee6"
+        name="Експортувати"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="5babecc0-9545-4877-8caa-23616f100148"
+            isDerived="false"
+            sourceEndRoleName="Експортувати"
+            targetEndRoleName="У Excel"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="a72a1ce5-94bd-493e-a554-adb17c558cec"
+              LastKnownName="У Excel"
+              LastKnownLocation="SyllabusUML.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ac93ea31-095e-48fd-90bb-0ebeeefd4c6d"
+                  name="Експортувати"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="913ea17f-2481-46c4-bc85-e7ef84505356"
+                  name="У Excel"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="9040ac18-4807-4600-b32f-d02d4a73cf57"
+            isDerived="false"
+            sourceEndRoleName="Експортувати"
+            targetEndRoleName="У Word"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="c4039bb6-2f6f-4d77-9d38-732be395f3e0"
+              LastKnownName="У Word"
+              LastKnownLocation="SyllabusUML.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2c51f13b-0bc5-47e8-a974-ebfd9861cca3"
+                  name="Експортувати"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="fd570688-7892-4956-b5bc-08ffbe5028c6"
+                  name="У Word"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="1ff1d7d5-1917-459d-aa30-19a372ac337e"
+            isDerived="false"
+            sourceEndRoleName="Експортувати"
+            targetEndRoleName="У Text"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="31fb1734-e750-4e18-b846-443f9b8ec83a"
+              LastKnownName="У Text"
+              LastKnownLocation="SyllabusUML.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2db5e2cf-40c3-4a6d-b405-7a2478b3b06a"
+                  name="Експортувати"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="69dead94-49cd-4c31-a7de-922b047a2073"
+                  name="У Text"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="5f2bea67-1518-4191-865a-3efa5df4c489"
+            isDerived="false"
+            sourceEndRoleName="Експортувати"
+            targetEndRoleName="Друкувати"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="d5587968-b32d-4479-9f69-66e956aa7a19"
+              LastKnownName="Друкувати"
+              LastKnownLocation="SyllabusUML.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="81fcb9be-500d-494c-8ea8-5f71219a9993"
+                  name="Експортувати"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="cd224c1e-6dec-4bff-9caf-0dd3f71c1db5"
+                  name="Друкувати"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="2a68b208-97e2-463e-88ba-082bfa125d35"
+        name="Зберегти"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="dd66be82-8dcb-476b-9d69-e9fffaab1693">
+            <useCaseMoniker
+              Id="40e52def-0a7e-4742-a1c1-be55b22ffc0e"
+              LastKnownName="Серіалізація у XML"
+              LastKnownLocation="SyllabusUML.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="d5c857b2-a5da-4459-a2f5-e315771a423a"
+        name="Ввести дані викладача"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f64e7a1f-a46f-4f72-a500-bbfa03b19eb4"
+        name="Ввести дані аудиторії"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="4bc94286-ea33-4423-91db-8c7ce1228f3b"
+        name="Ввести дані предмету "
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="d5587968-b32d-4479-9f69-66e956aa7a19"
+        name="Друкувати"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="a72a1ce5-94bd-493e-a554-adb17c558cec"
+        name="У Excel"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="c4039bb6-2f6f-4d77-9d38-732be395f3e0"
+        name="У Word"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="31fb1734-e750-4e18-b846-443f9b8ec83a"
+        name="У Text"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="40e52def-0a7e-4742-a1c1-be55b22ffc0e"
+        name="Серіалізація у XML"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="779f4ac0-b6b5-467b-8255-0fddf3210354"
+        name="Обрати структуру розкладу"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="b8d2bd92-43b0-445d-bfba-d6ae2140009f"
+            isDerived="false"
+            sourceEndRoleName="Обрати структуру розкладу"
+            targetEndRoleName="Обрати кількість курсів"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="254039c7-2f46-451c-93cf-9f58063ce601"
+              LastKnownName="Обрати кількість курсів"
+              LastKnownLocation="SyllabusUML.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4075ad2b-47f2-4a3b-8c9f-44dae277fcab"
+                  name="Обрати структуру розкладу"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="94249adb-0648-4d27-81f4-279dbd506d89"
+                  name="Обрати кількість курсів"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="b6641d00-a6ab-4d69-977c-7bc68d8e9a5f"
+            isDerived="false"
+            sourceEndRoleName="Обрати структуру розкладу"
+            targetEndRoleName="Додати групу"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="5412744a-d6f4-4c3b-8f15-9d4878d482a2"
+              LastKnownName="Додати групу"
+              LastKnownLocation="SyllabusUML.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="93fb4690-befd-4e63-84cb-12e7231dd5a1"
+                  name="Обрати структуру розкладу"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8baf4eda-6044-4876-90bb-69ce66ec2945"
+                  name="Додати групу"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="b2a4c773-b83b-440a-bba3-61ab684b56d3"
+            isDerived="false"
+            sourceEndRoleName="Обрати структуру розкладу"
+            targetEndRoleName="Видалити групу"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="5e410b14-b259-4054-b3b8-16e9d67dacd3"
+              LastKnownName="Видалити групу"
+              LastKnownLocation="SyllabusUML.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d46f60a7-f2c5-46f5-8e44-da84443def47"
+                  name="Обрати структуру розкладу"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="66574c78-9b1c-49b7-b66f-c66344dc7750"
+                  name="Видалити групу"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="5412744a-d6f4-4c3b-8f15-9d4878d482a2"
+        name="Додати групу"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="254039c7-2f46-451c-93cf-9f58063ce601"
+        name="Обрати кількість курсів"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="5e410b14-b259-4054-b3b8-16e9d67dacd3"
+        name="Видалити групу"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>
